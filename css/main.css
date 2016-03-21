@@ -1,0 +1,17 @@
+body {
+  margin:0;
+}
+
+a {
+  color:gray;
+  text-decoration:none;
+}
+
+.logoutLink {
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.top-container {
+  height: 80px;
+}

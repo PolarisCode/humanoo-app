@@ -8,10 +8,47 @@ a {
 }
 
 .logoutLink {
-  margin-top: 25px;
   margin-right: 20px;
 }
 
 .top-container {
   height: 80px;
+  line-height: 77px;
 }
+
+.companyName {
+  display:inline-block;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.menu {
+  height: 48px;
+  line-height: 48px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.menuNav {
+  width:920px;
+  margin:auto;
+  line-height: 48px;
+}
+
+.menuItem {
+  width: 220px;
+  display: inline-block;
+  cursor:pointer;
+  text-align: center;
+}
+
+.menuItem:hover {
+  border-bottom: 3px solid gray;
+}
+
+.menuItem.active {
+  border-bottom: 3px solid gray;
+}
+
+  .menuItem img{
+    height: 20px;
+  }

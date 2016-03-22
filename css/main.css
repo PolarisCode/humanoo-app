@@ -92,3 +92,36 @@ a {
   margin-top:10px;
   font-size:11px;
 }
+
+.bodySelectionContainer{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bodyImageContainer {
+  text-align: center;
+  background: white;
+}
+
+.bodyImage {
+  margin:10px;
+}
+
+.bodyFormContainer{
+  background: white;
+  height: 464px;
+}
+
+.selectedBodyPart {
+  display: none;
+  height: 100%;
+}
+
+img.map, map area{
+    outline: none;
+}
+.buttons{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

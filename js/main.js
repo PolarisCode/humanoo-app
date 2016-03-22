@@ -1,10 +1,17 @@
 (function($){
   var menuItems = $('.menuItem'),
-      mainContent = $('#mainContent'),
+      mainContent = $('#mainContent');
+      bodyParts = null,
+
+      loadInitialData = function(){
+        $.get("data/bodyParts.json", function(data){
+          bodyParts = data;
+        });
+      },
 
       loadPage = function(pageUrl){
           var effect = 'slide',
-              duration = 500;
+              duration = 300;
 
           mainContent.toggle(effect, { direction: 'left' }, duration);
           mainContent.load("content/" + pageUrl);
@@ -21,6 +28,20 @@
         })
       },
 
+      bodyPartClickHandler = function(){
+        mainContent.on('click', '#bodyMap area', function(){
+
+          var selectedBodyPart = $('.selectedBodyPart');
+          var clickedPart = $(this).attr('title');
+
+          selectedBodyPart.find('.header').text(clickedPart);
+          selectedBodyPart.find('.content').text(bodyParts.parts[clickedPart].desc);
+          selectedBodyPart.show();
+
+          $('.selectBodyPart').hide();
+        });
+      },
+
       loadInitialContent = function(){
           var activePage = menuItems.filter('.active').attr('data-page');
 
@@ -30,9 +51,13 @@
       },
 
       init = function(){
+        loadInitialData();
+
         menuClickHandler();
 
         loadInitialContent();
+
+        bodyPartClickHandler();
       }
 
       init();

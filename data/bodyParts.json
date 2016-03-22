@@ -1,0 +1,20 @@
+{
+  "parts": {
+      "head": { "desc":"On a human body, the head is the part with your skull, brain, eyes, ears, and mouth."},
+      "shin": {"desc": "the front part of the human leg between the knee and the ankle"},
+      "knee": {"desc": "The knee connects your tibia, or shinbone, to your femur, or thighbone."},
+      "thigh": {"desc":"the part of the leg between the hip and the knee"},
+      "groin": {"desc":"the fold or hollow on either side of the front of the body where the thigh joins the abdomen"},
+      "hip": {"desc":"Your hips are the flesh between your waist and upper leg, and they're also the bones that make up the complex joints there — the ones that make it possible for your legs to move so you can walk. "},
+      "chest": {"desc":"the part of the human torso between the neck and the diaphragm or the corresponding part in other vertebrates"},
+      "back": {"desc":"the posterior part of a human (or animal) body from the neck to the end of the spine"},
+      "stomach": {"desc":"a saclike enlargement of the alimentary canal, as in humans and certain animals, forming an organ for storing, diluting, and digesting food."},
+      "shoulder": {"desc":"the part of each side of the body in humans, at the top of the trunk, extending from each side of the base of the neck to the region where the arm articulates with the trunk."},
+      "neck": {"desc":"the part of the body of a human being that connects the head and the trunk."},
+      "arm": {"desc":"the upper limb of the human body, especially the part extending from the shoulder to the wrist."},
+      "elbow": {"desc":"the bend or joint of the human arm between upper arm and forearm."},
+      "forearm": {"desc":"the part of the arm between the elbow and the wrist."},
+      "hand": {"desc":"the terminal, prehensile part of the upper limb in humans and other primates, consisting of the wrist, metacarpal area, fingers, and thumb."},
+      "foor": {"desc":"the terminal part of the leg, below the ankle joint, on which the body stands and moves."}
+  }
+}

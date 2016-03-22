@@ -3,8 +3,12 @@
       mainContent = $('#mainContent'),
 
       loadPage = function(pageUrl){
-          mainContent.empty();
+          var effect = 'slide',
+              duration = 500;
+
+          mainContent.toggle(effect, { direction: 'left' }, duration);
           mainContent.load("content/" + pageUrl);
+          mainContent.toggle(effect, { direction: 'right' }, duration);
       },
 
       menuClickHandler = function(){

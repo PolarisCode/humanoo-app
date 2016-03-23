@@ -101,7 +101,7 @@ a {
 .bodyImageContainer {
   text-align: center;
   background: white;
-  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .bodyImage {
@@ -111,7 +111,7 @@ a {
 .bodyFormContainer{
   background: white;
   height: 464px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .selectedBodyPart {
@@ -124,14 +124,49 @@ a {
   background: white;
   margin-top:5px;
   margin-bottom: 5px;
-  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 img.map, map area{
     outline: none;
 }
+
 .buttons{
   position: absolute;
   bottom: 10px;
   right: 10px;
 }
+
+.wellBeing{
+  margin:auto;
+}
+
+.topMessage {
+  background: white;
+  margin-top:50px;
+  margin-bottom:20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.messageText {
+  margin:15px;
+}
+
+.messageItem {
+  background: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+}
+
+.header{
+  font-size:22px;
+  text-align: center;
+  border-bottom: solid #444444 1px;
+  margin-bottom:5px;
+  color: #444444;
+}
+
+.content {
+  margin:7px;
+}
+

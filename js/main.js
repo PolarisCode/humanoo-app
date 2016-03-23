@@ -1,8 +1,8 @@
 (function($){
   var menuItems = $('.menuItem'),
-      mainContent = $('#mainContent');
+      mainContent = $('#mainContent'),
       bodyParts = null,
-      selectedBodyParts = [];
+      selectedBodyParts = [],
 
       loadInitialData = function(){
         $.get("data/bodyParts.json", function(data){
@@ -12,16 +12,19 @@
 
       loadPage = function(pageUrl){
           var effect = 'slide',
-              duration = 300;
+              duration = 400;
 
-          mainContent.toggle(effect, { direction: 'left' }, duration);
-          mainContent.load("content/" + pageUrl);
-          mainContent.toggle(effect, { direction: 'right' }, duration);
+          selectedBodyParts = [];
+
+          mainContent.toggle(effect, { direction: 'left' }, duration, function(){
+            mainContent.load("content/" + pageUrl);
+            mainContent.toggle(effect, { direction: 'right' }, duration);
+          });
       },
 
       menuClickHandler = function(){
         menuItems.on('click', function(){
-          activeMenu = $(this);
+          var activeMenu = $(this);
           menuItems.removeClass('active');
           activeMenu.addClass('active');
 
@@ -43,10 +46,14 @@
         });
       },
 
+      resetForm = function(){
+        $('.selectedBodyPart').hide();
+        $('.selectBodyPart').show();
+      },
+
       cancelBodySelectionHandler = function(){
         mainContent.on('click', '.cancelBodySelection', function(){
-          $('.selectedBodyPart').hide();
-          $('.selectBodyPart').show();
+          resetForm();
         });
       },
 
@@ -56,14 +63,23 @@
               bodyPart = selectedBodyPart.find('.header').text(),
               content = selectedBodyPart.find('.content').text();
 
-          var newBodyPart = $($('.bodyPartItem')[0]).clone();
+          if (selectedBodyParts.indexOf(bodyPart)===-1) {
+            var newBodyPart = $($('.bodyPartItem')[0]).clone();
 
-          newBodyPart.find('.header').text(bodyPart);
-          newBodyPart.find('.content').text(content);
+            newBodyPart.find('.header').text(bodyPart);
+            newBodyPart.find('.content').text(content);
 
-          newBodyPart.show();
+            newBodyPart.show();
 
-          newBodyPart.appendTo($('.bodyParts'));
+            newBodyPart.appendTo($('.bodyParts'));
+
+            selectedBodyParts.push(bodyPart);
+
+          } else {
+            alert("Body Part already has been added.");
+          }
+
+          resetForm();
         });
       },
 
@@ -87,7 +103,7 @@
         cancelBodySelectionHandler();
 
         saveBodySelectionHandler();
-      }
+      };
 
       init();
 

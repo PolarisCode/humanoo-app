@@ -101,6 +101,7 @@ a {
 .bodyImageContainer {
   text-align: center;
   background: white;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 
 .bodyImage {
@@ -110,11 +111,20 @@ a {
 .bodyFormContainer{
   background: white;
   height: 464px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 
 .selectedBodyPart {
   display: none;
   height: 100%;
+}
+
+.bodyPartItem {
+  height: 200px;
+  background: white;
+  margin-top:5px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 
 img.map, map area{

@@ -1,49 +1,64 @@
 <div class="row bodySelectionContainer">
-  <div class="col-md-3 col-md-offset-2 bodyImageContainer">
-  <img class="bodyImage" src="assets/images/full_body.png" usemap="#bodyMap" hidefocus="true"/>
+  <div class="col-md-4 col-md-offset-1 bodyImageContainer">
+    <img class="bodyImage" src="assets/images/full_body.png" usemap="#bodyMap" hidefocus="true"/>
 
-  <map name="bodyMap" id="bodyMap">
-    <area alt="head" title="head" shape="poly" coords="66,29,66,16,72,8,80,6,95,8,101,17,104,32,104,45,99,53,95,57,85,59,77,54,69,43"/>
-    <area alt="shin" title="shin" href="#" shape="poly" coords="46,322,56,322,68,321,71,331,71,343,68,359,68,376,67,388,66,400,55,400,46,350,48,365" />
-    <area alt="shin" title="shin" href="#" shape="poly" coords="98,318,110,321,120,320,123,330,123,343,120,362,115,383,116,397,112,399,106,399,101,399,100,366,94,339" />
-    <area alt="knee" title="knee" href="#" shape="poly" coords="48,297,58,296,65,298,73,302,70,311,70,318,62,320,53,321,48,321" />
-    <area alt="knee" title="knee" href="#" shape="poly" coords="91,300,108,298,116,300,118,309,120,319,111,320,99,317" />
-    <area alt="thigh" title="thigh" href="#" shape="poly" coords="43,233,61,231,69,225,80,236,80,249,78,266,75,285,73,299,65,297,57,294,50,295,43,277" />
-    <area alt="thigh" title="thigh" href="#" shape="poly" coords="94,224,105,234,110,234,123,232,125,243,125,265,122,284,120,296,114,298,105,298,98,298,95,297,90,283,86,264,85,251,85,234" />
-    <area alt="groin" title="groin" href="#" shape="poly" coords="57,186,77,191,94,192,111,188,104,199,98,212,91,225,80,233,71,224" />
-    <area alt="hip" title="hip" href="#" shape="poly" coords="48,182,59,196,64,209,68,223,63,229,50,231,43,232" />
-    <area alt="hip" title="hip" href="#" shape="poly" coords="101,207,110,194,115,186,118,202,119,215,123,225,123,231,110,233,103,231,94,222" />
-    <area alt="stomach" title="stomach" href="#" shape="poly" coords="72,123,83,120,98,122,96,140,97,154,99,163,110,164,116,172,116,180,113,186,91,190,81,189,64,186,53,181,48,178,50,165,61,162,70,158,75,150" />
-    <area alt="back" title="back" href="#" shape="poly" coords="42,119,54,123,68,126,72,133,72,143,72,152,66,157,57,162,52,162,52,145" />
-    <area alt="back" title="back" href="#" shape="poly" coords="96,120,107,124,119,122,118,135,118,146,116,154,116,162,105,163,99,159" />
-    <area alt="chest" title="chest" href="#" shape="poly" coords="87,117,63,122,51,119,43,112,45,104,58,93,59,83,74,83,85,86,96,83,102,81,105,92,117,99,123,110,115,119,105,122" />
-    <area alt="neck" title="neck" href="#" shape="poly" coords="65,44,75,53,85,60,94,62,92,70,99,80,92,83,84,85,72,82,64,82,55,81,61,75,68,65,69,54" />
-    <area alt="shoulder" title="shoulder" href="#" shape="poly" coords="27,95,38,88,51,79,61,83,54,94,48,102,44,111,38,117,31,118,26,117" />
-    <area alt="shoulder" title="shoulder" href="#" shape="poly" coords="113,80,123,83,132,92,137,103,137,110,134,114,128,113,124,113,115,95,109,89,104,83" />
-    <area alt="arm" title="arm" href="#" shape="poly" coords="20,141,22,131,25,123,25,116,32,117,43,116,44,124,43,136,40,145,38,152,29,147" />
-    <area alt="arm" title="arm" href="#" shape="poly" coords="130,112,138,117,139,127,142,144,143,152,136,153,130,155,125,153,122,142,120,133,120,119,123,113" />
-    <area alt="elbow" title="elbow" href="#" shape="poly" coords="12,164,14,154,20,148,21,144,31,148,35,153,35,158,35,166" />
-    <area alt="elbow" title="elbow" href="#" shape="poly" coords="134,152,142,152,146,160,149,168,141,174,133,173,129,168,126,157" />
-    <area alt="forearm" title="forearm" href="#" shape="poly" coords="8,215,11,199,11,187,12,171,13,164,20,167,32,166,28,181,23,196,22,209,20,215,17,217" />
-    <area alt="forearm" title="forearm" href="#" shape="poly" coords="140,174,150,169,151,186,152,203,154,217,150,221,144,221,139,202,131,185,129,173" />
-    <area alt="hand" title="hand" href="#" shape="poly" coords="8,242,7,232,7,217,19,216,25,224,27,234,30,244,26,249,23,258,16,255" />
-    <area alt="hand" title="hand" href="#" shape="poly" coords="137,237,143,226,143,220,156,219,156,233,153,253,146,263,140,261,137,249" />
-    <area alt="foot" title="foot" href="#" shape="poly" coords="34,430,47,418,53,399,67,398,69,408,69,418,70,427,65,429,59,435,53,436,39,435" />
-    <area alt="foot" title="foot" href="#" shape="poly" coords="98,399,113,399,116,405,126,423,132,429,126,433,118,434,110,435,105,430,98,425,97,410,100,400" />
-  </map>
+    <map name="bodyMap" id="bodyMap">
+      <area alt="head" title="head" shape="poly" coords="66,29,66,16,72,8,80,6,95,8,101,17,104,32,104,45,99,53,95,57,85,59,77,54,69,43"/>
+      <area alt="shin" title="shin" href="#" shape="poly" coords="46,322,56,322,68,321,71,331,71,343,68,359,68,376,67,388,66,400,55,400,46,350,48,365" />
+      <area alt="shin" title="shin" href="#" shape="poly" coords="98,318,110,321,120,320,123,330,123,343,120,362,115,383,116,397,112,399,106,399,101,399,100,366,94,339" />
+      <area alt="knee" title="knee" href="#" shape="poly" coords="48,297,58,296,65,298,73,302,70,311,70,318,62,320,53,321,48,321" />
+      <area alt="knee" title="knee" href="#" shape="poly" coords="91,300,108,298,116,300,118,309,120,319,111,320,99,317" />
+      <area alt="thigh" title="thigh" href="#" shape="poly" coords="43,233,61,231,69,225,80,236,80,249,78,266,75,285,73,299,65,297,57,294,50,295,43,277" />
+      <area alt="thigh" title="thigh" href="#" shape="poly" coords="94,224,105,234,110,234,123,232,125,243,125,265,122,284,120,296,114,298,105,298,98,298,95,297,90,283,86,264,85,251,85,234" />
+      <area alt="groin" title="groin" href="#" shape="poly" coords="57,186,77,191,94,192,111,188,104,199,98,212,91,225,80,233,71,224" />
+      <area alt="hip" title="hip" href="#" shape="poly" coords="48,182,59,196,64,209,68,223,63,229,50,231,43,232" />
+      <area alt="hip" title="hip" href="#" shape="poly" coords="101,207,110,194,115,186,118,202,119,215,123,225,123,231,110,233,103,231,94,222" />
+      <area alt="stomach" title="stomach" href="#" shape="poly" coords="72,123,83,120,98,122,96,140,97,154,99,163,110,164,116,172,116,180,113,186,91,190,81,189,64,186,53,181,48,178,50,165,61,162,70,158,75,150" />
+      <area alt="back" title="back" href="#" shape="poly" coords="42,119,54,123,68,126,72,133,72,143,72,152,66,157,57,162,52,162,52,145" />
+      <area alt="back" title="back" href="#" shape="poly" coords="96,120,107,124,119,122,118,135,118,146,116,154,116,162,105,163,99,159" />
+      <area alt="chest" title="chest" href="#" shape="poly" coords="87,117,63,122,51,119,43,112,45,104,58,93,59,83,74,83,85,86,96,83,102,81,105,92,117,99,123,110,115,119,105,122" />
+      <area alt="neck" title="neck" href="#" shape="poly" coords="65,44,75,53,85,60,94,62,92,70,99,80,92,83,84,85,72,82,64,82,55,81,61,75,68,65,69,54" />
+      <area alt="shoulder" title="shoulder" href="#" shape="poly" coords="27,95,38,88,51,79,61,83,54,94,48,102,44,111,38,117,31,118,26,117" />
+      <area alt="shoulder" title="shoulder" href="#" shape="poly" coords="113,80,123,83,132,92,137,103,137,110,134,114,128,113,124,113,115,95,109,89,104,83" />
+      <area alt="arm" title="arm" href="#" shape="poly" coords="20,141,22,131,25,123,25,116,32,117,43,116,44,124,43,136,40,145,38,152,29,147" />
+      <area alt="arm" title="arm" href="#" shape="poly" coords="130,112,138,117,139,127,142,144,143,152,136,153,130,155,125,153,122,142,120,133,120,119,123,113" />
+      <area alt="elbow" title="elbow" href="#" shape="poly" coords="12,164,14,154,20,148,21,144,31,148,35,153,35,158,35,166" />
+      <area alt="elbow" title="elbow" href="#" shape="poly" coords="134,152,142,152,146,160,149,168,141,174,133,173,129,168,126,157" />
+      <area alt="forearm" title="forearm" href="#" shape="poly" coords="8,215,11,199,11,187,12,171,13,164,20,167,32,166,28,181,23,196,22,209,20,215,17,217" />
+      <area alt="forearm" title="forearm" href="#" shape="poly" coords="140,174,150,169,151,186,152,203,154,217,150,221,144,221,139,202,131,185,129,173" />
+      <area alt="hand" title="hand" href="#" shape="poly" coords="8,242,7,232,7,217,19,216,25,224,27,234,30,244,26,249,23,258,16,255" />
+      <area alt="hand" title="hand" href="#" shape="poly" coords="137,237,143,226,143,220,156,219,156,233,153,253,146,263,140,261,137,249" />
+      <area alt="foot" title="foot" href="#" shape="poly" coords="34,430,47,418,53,399,67,398,69,408,69,418,70,427,65,429,59,435,53,436,39,435" />
+      <area alt="foot" title="foot" href="#" shape="poly" coords="98,399,113,399,116,405,126,423,132,429,126,433,118,434,110,435,105,430,98,425,97,410,100,400" />
+    </map>
   </div>
 
-  <div class="col-md-4 col-md-offset-2 bodyFormContainer">
+  <div class="col-md-4 col-md-offset-1 bodyFormContainer">
     <div class="selectBodyPart">
-      <h3>Please, click on body part </h3>
+        <h2 class="header">add body part</h2>
+        <div class="content">
+          description about body areas...<br/>
+          how they influence the recomended exercises and how it works<br><br>
+          maybe also a small guide with pictures which explaint how to select
+          body ares, the slider and intensity
+        </div>
     </div>
     <div class="selectedBodyPart">
       <h2 class="header"/>
       <div class="content"/>
-      <div class="buttons">
-        <button>Cancel</button>
-        <button>Save </button>
+        <div class="buttons">
+          <a class="cancelBodySelection" href="#">CANCEL</a>
+          <a class="saveBodySelection" href="#">SAVE</a>
+        </div>
       </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="bodyParts">
+    <div class="bodyPartItem col-md-4 col-md-offset-1" style="display:none">
+      <h2 class="header"/>
+      <div class="content"/>
     </div>
   </div>
 </div>

@@ -2,6 +2,7 @@
   var menuItems = $('.menuItem'),
       mainContent = $('#mainContent');
       bodyParts = null,
+      selectedBodyParts = [];
 
       loadInitialData = function(){
         $.get("data/bodyParts.json", function(data){
@@ -42,6 +43,30 @@
         });
       },
 
+      cancelBodySelectionHandler = function(){
+        mainContent.on('click', '.cancelBodySelection', function(){
+          $('.selectedBodyPart').hide();
+          $('.selectBodyPart').show();
+        });
+      },
+
+      saveBodySelectionHandler = function(){
+        mainContent.on('click','.saveBodySelection', function(){
+          var selectedBodyPart = $('.selectedBodyPart'),
+              bodyPart = selectedBodyPart.find('.header').text(),
+              content = selectedBodyPart.find('.content').text();
+
+          var newBodyPart = $($('.bodyPartItem')[0]).clone();
+
+          newBodyPart.find('.header').text(bodyPart);
+          newBodyPart.find('.content').text(content);
+
+          newBodyPart.show();
+
+          newBodyPart.appendTo($('.bodyParts'));
+        });
+      },
+
       loadInitialContent = function(){
           var activePage = menuItems.filter('.active').attr('data-page');
 
@@ -58,6 +83,10 @@
         loadInitialContent();
 
         bodyPartClickHandler();
+
+        cancelBodySelectionHandler();
+
+        saveBodySelectionHandler();
       }
 
       init();

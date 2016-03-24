@@ -125,7 +125,7 @@ a:hover{
 }
 
 .bodyPartItem {
-  height: 200px;
+  height: 250px;
   background: white;
   margin-top:5px;
   margin-bottom: 5px;
@@ -162,6 +162,12 @@ img.map, map area{
   background: white;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   margin-bottom: 15px;
+}
+
+.bodyParts .messageDesc{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
   .messageItem .progressContainer {
